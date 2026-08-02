@@ -29,6 +29,18 @@ jobs:
         uses: actions/checkout@v4
 
       ############################################################
+      # DEBUG GITHUB CONTEXT
+      ############################################################
+
+      - name: Debug GitHub Context
+        run: |
+          echo "Repository = ${{ github.repository }}"
+          echo "Ref = ${{ github.ref }}"
+          echo "Ref Name = ${{ github.ref_name }}"
+          echo "Event = ${{ github.event_name }}"
+          echo "Environment = Development"
+
+      ############################################################
       # CONFIGURE AWS CREDENTIALS
       ############################################################
 
