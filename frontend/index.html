@@ -1,67 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
 <header>
-Employee Management System
+    Employee Management System
 </header>
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<h2>Add / Update Employee</h2>
+        <h2>Add / Update Employee</h2>
 
-<div class="form-group">
+        <div class="form-group">
 
-<input id="studentId" hidden>
+            <input type="hidden" id="studentId">
 
-<input id="fname" placeholder="First Name">
+            <input type="text" id="fname" placeholder="First Name">
 
-<input id="lname" placeholder="Last Name">
+            <input type="text" id="lname" placeholder="Last Name">
 
-<input id="email" placeholder="Email">
+            <input type="email" id="email" placeholder="Email">
 
-</div>
+        </div>
 
-<div class="buttons">
+        <div class="buttons">
 
-<button class="add-btn" onclick="addStudent()">Add Employee</button>
+            <button class="add-btn" onclick="addStudent()">Add Employee</button>
 
-<button class="update-btn" onclick="updateStudent()">Update Employee</button>
+            <button class="update-btn" onclick="updateStudent()">Update Employee</button>
 
-<button class="clear-btn" onclick="clearForm()">Clear</button>
+            <button class="clear-btn" onclick="clearForm()">Clear</button>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<div class="card">
+    <div class="card">
 
-<h2>Employee</h2>
+        <h2>Employee List</h2>
 
-<table>
+        <table>
 
-<thead>
+            <thead>
 
-<tr>
+                <tr>
 
-<th>ID</th>
+                    <th>ID</th>
 
-<th>Name</th>
+                    <th>Name</th>
 
-<th>Email</th>
+                    <th>Email</th>
 
-<th>Actions</th>
+                    <th>Actions</th>
 
-</tr>
+                </tr>
 
-</thead>
+            </thead>
 
-<tbody id="Employee"></tbody>
+            <tbody id="studentTable"></tbody>
 
-</table>
+        </table>
 
-</div>
+    </div>
 
 </div>
 
 <div class="footer">
-Production DevOps Platform • AWS • EKS • GitHub Actions • Terraform
+Production DevOps Platform • AWS • Terraform • EKS • GitHub Actions
 </div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
