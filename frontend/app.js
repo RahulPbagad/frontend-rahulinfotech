@@ -1,4 +1,4 @@
-const API_URL="https://dev-api.frontend-rahulinfotech.in"
+const API_URL = "http://k8s-backend-backendi-7da562011c-2030545873.ap-south-1.elb.amazonaws.com"
 
 
 
