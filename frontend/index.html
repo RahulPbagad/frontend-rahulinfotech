@@ -1,59 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Employee Management Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<header>
+Employee Management System
+</header>
 
 <div class="container">
 
-    <h1> Employee Management Dashboard</h1>
+<div class="card">
 
-    <div class="card">
+<h2>Add / Update Employee</h2>
 
-        <h2>Add / Update Employee</h2>
+<div class="form-group">
 
-        <input type="hidden" id="studentId">
+<input id="studentId" hidden>
 
-        <input id="fname" placeholder="First Name">
+<input id="fname" placeholder="First Name">
 
-        <input id="lname" placeholder="Last Name">
+<input id="lname" placeholder="Last Name">
 
-        <input id="email" placeholder="Email">
-
-        <button onclick="addStudent()">Add Employee</button>
-
-        <button onclick="updateStudent()">Update Employee</button>
-
-    </div>
-
-    <div class="card">
-
-        <h2>Employee Records</h2>
-
-        <button onclick="loadStudents()">Refresh</button>
-
-        <table>
-
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-
-            <tbody id="studentTable"></tbody>
-
-        </table>
-
-    </div>
+<input id="email" placeholder="Email">
 
 </div>
-<script src="config.js"></script>
-<script src="app.js"></script>
 
-</body>
-</html>
+<div class="buttons">
+
+<button class="add-btn" onclick="addStudent()">Add Employee</button>
+
+<button class="update-btn" onclick="updateStudent()">Update Employee</button>
+
+<button class="clear-btn" onclick="clearForm()">Clear</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Employee</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="Employee"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="footer">
+Production DevOps Platform • AWS • EKS • GitHub Actions • Terraform
+</div>
